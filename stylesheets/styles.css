@@ -1,0 +1,428 @@
+html {
+font-family     : 'ABeeZee', sans-serif;
+margin          : 0;
+padding         : 0;
+min-height      : 100%;
+position        : relative;
+background      :#CCC;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+margin          : 0;
+padding         : 0;
+margin-bottom   : 80px;
+}
+
+.tabs {
+text-decoration : none;
+text-align      : center;
+border          : 1px solid #888;
+padding         : 10px 25px;
+border-radius   : 7px;
+margin-right    :25px;
+color           : #CCC;
+}
+
+.application-container {
+width           : 75%;
+position        : relative;
+margin          : auto;
+top             : 10px;
+min-height      : 500px;
+}
+
+.main-container {
+width           :70%;
+position        :absolute;
+top             :0;
+left            :0;
+bottom          :0;
+display         :inline-block;
+}
+
+/* container for user taken images */
+.album-container {
+width           :30%;
+position        :absolute;
+top             :0;
+right           :0;
+bottom          :0;
+display         :inline-block;
+overflow: scroll;
+}
+
+.album-images {
+width           : 192px;
+height          :144px;
+display         :block;
+object-fit      : contain;
+margin          :auto;
+padding: 5px;
+}
+/* END */
+
+/* container for super images */
+.super-album-container {
+position        :absolute;
+width           :100%;
+height          :160px;
+top             :0;
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+}
+
+.super-album-images {
+    width           : 192px;
+    height          : 144px;
+    display         : inline-block;
+    object-fit      : contain;
+    margin          : auto;
+    padding         : 5px;
+    cursor: pointer;
+}
+/* END */
+
+/* Container for videocamera */
+.camera-container {
+position        : absolute;
+bottom          :0;
+width           :100%;
+height: 310px;
+}
+
+.camera {
+position        : absolute;
+top             : 0;
+left            : 0;
+width           : 320px;
+height          : 240px;
+}
+
+#uploadImage {
+    height: 20px;
+    width: 100%;
+}
+
+#take-picture-button-container {
+    position        : absolute;
+    left           : 0;
+    right: 0;
+    bottom: 0;
+    height: 70px;
+    width:  320px;
+}
+
+#take-picture-button {
+font-family     : 'ABeeZee', sans-serif;
+font-size       : 20px;
+color           : tomato;
+width:  100%;
+height          : 50px;
+cursor: pointer;
+}
+
+
+#to-right {
+float           :right;
+}
+
+#title-button {
+font-size       :40px;
+text-decoration :none;
+color           :tomato;
+margin-left     :100px;
+}
+
+/* HEADER */
+.site-header {
+background-color: #2F2F2F;
+color           : #CCC;
+height          : 100px;
+line-height     : 100px;
+position        : relative;
+top             : 0px;
+}
+/* END-HEADER */
+
+/* FOOTER */
+.site-footer {
+background-color: #2F2F2F;
+position        : absolute;
+bottom          : 0;
+width           : 100%;
+height          : 60px;
+color           :#CCC;
+    }
+
+#footer-content {
+text-align      : center;
+    }
+/* END-FOOTER */
+
+/* INDEX PAGE */
+#wellcome {
+text-align      : center;
+color           :#2F2F2F;
+font-size       : 70px;
+}
+
+/* HOME PAGE BUTTONS */
+.register-button {
+width           :100px;
+display         :block;
+color           :tomato;
+margin          : auto;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.register-button:hover {
+    background-color: tomato;
+    color: #CCC;
+    box-shadow: none;
+}
+
+.login-button {
+width           :100px;
+display         :block;
+color           :#2F2F2F;
+margin          : auto;
+margin-top      : 25px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.login-button:hover {
+    background-color: #2F2F2F;
+    color: #CCC;
+    box-shadow: none;
+}
+
+.gallery-button {
+    width: 100px;
+    display: block;
+    background-color: #2F2F2F;
+    color: #CCC;
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.gallery-button:hover {
+    background-color: #CCC;
+    color: #2F2F2F;
+    box-shadow: none;
+}
+
+.gallery-image {
+    height: 240;
+    width: 320;
+}
+
+
+p {
+text-align      : center;
+}
+
+/* GALLERY_PHP */
+.gallery-container {
+    width: 90%;
+    margin: auto;
+    margin-top:20px;
+}
+
+#image-quantity {
+    width: 100%;
+}
+
+#select-quantity {
+    display: inline-block;
+    margin: auto;
+}
+
+.photo-div {
+    background: #2F2F2F;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    width: 320px;
+    height: 277px;
+}
+
+#photo-info {
+    color: #CCC;
+    margin: 7px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#owner {
+    color: tomato;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    z-index: 1;
+    background-color: black;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #2F2F2F;
+    margin: 15% auto;
+    width: 80%;
+}
+
+#modal-image {
+    display: block;
+    margin: auto;
+}
+#comment-area {
+    width: 320px;
+    resize: none;
+    margin: 15px auto;
+    display: block;
+}
+
+#like-container {
+    display: inline-block;
+    width: 49%;
+}
+#likes-count {
+    display: inline-block;
+    color: #ccc;
+}
+#like-btn {
+    text-decoration: none;
+    display: inline-block;
+    color: tomato;
+    cursor: pointer;
+}
+#like-btn-txt {
+     font-weight: normal;
+}
+#like-btn-txt:hover {
+    font-weight: bold;
+}
+
+.comment-button {
+    width: 320px;
+    background-color: #ccc;
+    color: tomato;
+    font-weight: bold;
+    font-size: 11px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    border: none;
+    cursor: pointer;
+}
+.comment-button:hover {
+    background-color: tomato;
+    color: #ccc;
+}
+
+.ld-area-container {
+    width: 320px;
+    margin: auto;
+}
+
+#del-container {
+    width: 49%;
+    display: inline-block;
+}
+#delete-btn {
+    cursor: pointer;
+    background-color: Transparent;
+    border: none;
+    text-decoration: underline;
+    font-size: 15px;
+    color: #ccc;
+}
+#delete-btn:hover {
+    color: red;
+}
+
+.close {
+    position: relative;
+    margin: 7px;
+    color: #aaa;
+    left: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* END_PHOTOS_PHP */
+
+/* SETTINGS PAGE */
+.txt-color {
+    color: #2F2F2F;
+}
+
+.label-txt {
+    font-style: italic;
+}
+
+.title {
+    text-align: center;
+}
+
+.settings-container {
+    width: 90%;
+    margin: auto;
+    color           : #2F2F2F;
+}
+
+.settings-fields {
+    margin: 20px;
+}
+
+.input-txt {
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+#notify {
+    cursor: pointer;
+}
+
+.change-button {
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    float: right;
+    display         : block;
+    color           : #2F2F2F;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.change-button:hover {
+    background-color: #2F2F2F;
+    color: tomato;
+    box-shadow: none;
+}
+/* END - SETTINGS PAGE */
